@@ -1,0 +1,182 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "CMzK9w_o1YauVUK7OR8FVXgCvPM",
+    "nextPageToken": "CAUQAA",
+    "regionCode": "FR",
+    "pageInfo": {
+        "totalResults": 1711,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "v8kiKr_TB7q9RERTsy2hVgaJ0Mw",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "UZLNgz1AqCE"
+            },
+            "snippet": {
+                "publishedAt": "2019-06-08T15:04:56Z",
+                "channelId": "UCWeg2Pkate69NFdBeuRFTAw",
+                "title": "Kezah ft Freddy - Mirador",
+                "description": "Yoko enfin disponible : http://www.yokoshop.com Ecoute les hits de l'été sur les plateformes de streaming : ▻ Mirador ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/UZLNgz1AqCE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/UZLNgz1AqCE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/UZLNgz1AqCE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "SQUEEZIE",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-06-08T15:04:56Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "zxWsv8dNo-m9ECsbqvL0zlRYgXQ",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "st8xWyMZXOU"
+            },
+            "snippet": {
+                "publishedAt": "2021-11-15T17:01:40Z",
+                "channelId": "UCWeg2Pkate69NFdBeuRFTAw",
+                "title": "Trei Degete - Time Time",
+                "description": "Soutiens les Trei Degete en achetant leur single chez LIDL ou sur http://www.hits2000.fr 'Time Time' est dispo sur toutes les ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/st8xWyMZXOU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/st8xWyMZXOU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/st8xWyMZXOU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "SQUEEZIE",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-11-15T17:01:40Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Y8MirIBaguNLeeirQZJLdqZSyfI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "fwKSENnZ7oM"
+            },
+            "snippet": {
+                "publishedAt": "2017-09-30T16:43:40Z",
+                "channelId": "UCWeg2Pkate69NFdBeuRFTAw",
+                "title": "SQUEEZIE - FREESTYLE DU DICO (ft Bigflo &amp; Oli)",
+                "description": "Clip et musique réalisés en 12 heures. Voir cette vidéo pour comprendre : https://youtu.be/CK1lGDlnR2I ABONNE-TOI ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/fwKSENnZ7oM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/fwKSENnZ7oM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/fwKSENnZ7oM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "SQUEEZIE",
+                "liveBroadcastContent": "none",
+                "publishTime": "2017-09-30T16:43:40Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ZOdmKqRS-6J-i-rXAvgIWXvk-z0",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "uGSu6mhk3RQ"
+            },
+            "snippet": {
+                "publishedAt": "2018-02-19T18:17:06Z",
+                "channelId": "UCWeg2Pkate69NFdBeuRFTAw",
+                "title": "SQUEEZIE - TOP 1",
+                "description": "On veut tous faire top 1 sur Fortnite. Mais c'est pas donné à tout le monde. ABONNE-TOI ! http://bit.ly/2fm88Xo (merci) La boutique ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/uGSu6mhk3RQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/uGSu6mhk3RQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/uGSu6mhk3RQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "SQUEEZIE",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-02-19T18:17:06Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "7jhV0lFgcV_Q0armTjfnHHreTSA",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "oFMh23ez5gw"
+            },
+            "snippet": {
+                "publishedAt": "2017-07-01T15:00:40Z",
+                "channelId": "UCWeg2Pkate69NFdBeuRFTAw",
+                "title": "SQUEEZIE - PLACEMENTS DE PRODUITS (ft Maxenss)",
+                "description": "L'histoire de deux mecs qui font des placements de produits. (cette vidéo ne contient aucun vrai placement de produit) ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/oFMh23ez5gw/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/oFMh23ez5gw/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/oFMh23ez5gw/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "SQUEEZIE",
+                "liveBroadcastContent": "none",
+                "publishTime": "2017-07-01T15:00:40Z"
+            }
+        }
+    ]
+}
