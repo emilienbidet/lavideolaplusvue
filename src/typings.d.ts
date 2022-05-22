@@ -9,7 +9,3 @@ export type TVideo = {
 };
 
 export type TGameState = "vs" | "won" | "lost";
-
-export type WindowCustomised = typeof window & {
-    umami: any;
-};
