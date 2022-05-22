@@ -36,7 +36,9 @@ const Game = () => {
         const newScore = hasWon ? score + 1 : 0;
         setGameState(hasWon ? "won" : "lost");
         setScore(newScore);
-        setHighScore(Math.max(newScore, highScore));
+        const newHighScore = Math.max(newScore, highScore);
+        setHighScore(newHighScore);
+        localStorage.setItem("highScore", newHighScore.toString());
     }, [leftVideo, rightVideo, score, videoClicked, highScore, setHighScore, setScore]);
 
     const handleClickRightVideo = useCallback(() => {
@@ -77,10 +79,7 @@ const Game = () => {
 
     useEffect(() => {
         setHighScore(parseInt(localStorage.getItem("highScore") || "0"));
-        return () => {
-            localStorage.setItem("highScore", highScore.toString());
-        };
-    }, []);
+    }, [setHighScore]);
 
     return (
         <Container borderColor={borderColor}>
