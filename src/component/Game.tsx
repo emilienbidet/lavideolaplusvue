@@ -1,5 +1,5 @@
 import {useCallback, useEffect, useMemo, useState} from "react";
-import {TGameState, TVideo} from "../typings";
+import {TGameState, TVideo, WindowCustomised} from "../typings";
 import {getRandomVideo} from "../utils/video";
 import ScoreBar from "./ScoreBar";
 import Video from "./Video";
@@ -79,6 +79,9 @@ const Game = () => {
 
     useEffect(() => {
         setHighScore(parseInt(localStorage.getItem("highScore") || "0"));
+        window.addEventListener("beforeunload", (event) => {
+            (window as WindowCustomised).umami.trackEvent(highScore, "highScore");
+        });
     }, [setHighScore]);
 
     return (

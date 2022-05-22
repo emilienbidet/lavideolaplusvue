@@ -46,16 +46,20 @@ const Share: FunctionComponent<ShareProps> = ({highScore}) => {
 
     return (
         <Container>
-            {canShare && <ShareLogo onClick={handleShareClick} />}
+            {canShare && (
+                <ShareLogo className="umami--click--share-button" onClick={handleShareClick} />
+            )}
             {!canShare && (
                 <Flex style={{gap: "0.75rem"}}>
                     <a
+                        className="umami--click--facebook-button"
                         target="_blank"
                         href={"https://www.facebook.com/sharer/sharer.php?u=" + SHARED_URL}
                     >
                         <FacebookLogo />
                     </a>
                     <a
+                        className="umami--click--twitter-button"
                         target="_blank"
                         href={
                             "https://twitter.com/share?url=" +
