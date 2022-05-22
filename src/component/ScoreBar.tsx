@@ -8,8 +8,8 @@ type ScoreBarProps = {
 
 const ScoreBar = ({highScore, score}: ScoreBarProps) => {
     return (
-        <Container justifyContent={"space-between"}>
-            <ScoreText>Meilleur score : {highScore}</ScoreText>
+        <Container>
+            <ScoreText>Best : {highScore}</ScoreText>
             <ScoreText>Score : {score}</ScoreText>
         </Container>
     );
@@ -21,21 +21,16 @@ const Container = styled(Flex)`
     z-index: 1;
     width: 100%;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 `;
 
 const ScoreText = styled.span`
-    font-size: 16px;
-    font-style: bold;
-    font-weight: 700;
+    font-size: 1rem;
 
-    @media screen and (min-width: 600px) {
-        font-size: 18px;
-    }
     @media screen and (min-width: 800px) {
         font-size: 20px;
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 22px;
     }
 `;
 

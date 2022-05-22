@@ -21,22 +21,24 @@ const Video = ({video, initialState, onClick, onAnimationEnd}: VideoCardProps) =
         [viewCount]
     );
 
+    // Trim the title to fit the space and add "..." if it's too long
+    const trimmedTitle = useMemo(
+        () => (title.length > 60 ? `${title.substring(0, 60)}...` : title),
+        [title]
+    );
+
     return (
         <Container backgroundUrl={thumbnailUrl} justifyContent={"center"} onClick={onClick}>
             <Flex justifyContent={"center"} alignItems={"center"} flexDirection={"column"}>
                 <Flex flexDirection={"column"} marginBottom={4}>
-                    <h1 style={{textAlign: "center", fontSize: "2rem", marginBottom: "1rem"}}>
-                        {title}
-                    </h1>
-                    <h2 style={{textAlign: "center", fontSize: "1rem"}}>{channelTitle}</h2>
+                    <VideoTitle>{trimmedTitle}</VideoTitle>
+                    <ChannelTitle>{channelTitle}</ChannelTitle>
                 </Flex>
 
                 {initialState == "views" && (
                     <Flex flexDirection={"column"}>
-                        <span style={{fontSize: "3rem", color: "#fff989", fontWeight: "bold"}}>
-                            {formattedViews}
-                        </span>
-                        <p style={{fontSize: "1rem", textAlign: "center"}}>vues</p>
+                        <ViewsText>{formattedViews}</ViewsText>
+                        <ViewText>vues</ViewText>
                     </Flex>
                 )}
 
@@ -49,18 +51,9 @@ const Video = ({video, initialState, onClick, onAnimationEnd}: VideoCardProps) =
                             delay={0}
                             onEnd={onAnimationEnd}
                         >
-                            {({countUpRef}) => (
-                                <span
-                                    style={{
-                                        fontSize: "3rem",
-                                        color: "#fff989",
-                                        fontWeight: "bold",
-                                    }}
-                                    ref={countUpRef}
-                                />
-                            )}
+                            {({countUpRef}) => <ViewsText ref={countUpRef} />}
                         </CountUp>
-                        <p style={{fontSize: "1rem", textAlign: "center"}}>vues</p>
+                        <ViewText>vues</ViewText>
                     </Flex>
                 )}
             </Flex>
@@ -80,6 +73,46 @@ const Container = styled(Flex)<TContainerProps>`
     background-size: cover;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url("${(props) => props.backgroundUrl}");
+`;
+
+const VideoTitle = styled.h1`
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+
+    @media screen and (min-width: 800px) {
+        font-size: 1.5rem;
+    }
+`;
+
+const ChannelTitle = styled.h2`
+    text-align: center;
+    font-size: 0.8rem;
+    text-decoration: underline;
+
+    @media screen and (min-width: 800px) {
+        font-size: 1rem;
+    }
+`;
+
+const ViewsText = styled.span`
+    font-size: 2rem;
+    color: #fff989;
+    white-space: nowrap;
+
+    @media screen and (min-width: 800px) {
+        font-size: 3rem;
+    }
+`;
+
+const ViewText = styled.p`
+    font-size: 0.5rem;
+    text-align: center;
+    font-family: Varela Round;
+
+    @media screen and (min-width: 800px) {
+        font-size: 0.8rem;
+    }
 `;
 
 export default Video;
