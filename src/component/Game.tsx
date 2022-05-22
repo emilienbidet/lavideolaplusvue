@@ -5,7 +5,7 @@ import ScoreBar from "./ScoreBar";
 import Video from "./Video";
 import VideoContainer from "./VideoContainer";
 import styled from "styled-components";
-import MadeBy from "./MadeBy";
+import Share from "./Share";
 
 const Game = () => {
     const [score, setScore] = useState<number>(0);
@@ -95,7 +95,7 @@ const Game = () => {
                 />
                 <Video initialState="empty" video={nextVideo} />
             </VideoContainer>
-            <MadeBy />
+            <Share highScore={highScore} />
         </Container>
     );
 };
