@@ -1,8 +1,22 @@
-# Getting Started with Create React App
+![Live demo](https://user-images.githubusercontent.com/44983373/191365222-ee87a0a1-b906-47ec-b81e-786ddf4569cd.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# La video la plus vue
+
+## Intro
+
+I made this little game when I was bored in class
+
+Goal : Guess which video was the most viewed
+
+## Results
+
+- [Reddit feedbacks](https://www.reddit.com/r/AskFrance/comments/uvvdzf/jai_fait_un_jeu_sur_le_youtube_game_fran%C3%A7ais_vous/)
+- Umami analytics
+![Umami results](https://user-images.githubusercontent.com/44983373/191365918-c38f6613-d9af-40aa-add1-7757e36de240.png)
+
+
+## Set up
 
 In the project directory, you can run:
 
