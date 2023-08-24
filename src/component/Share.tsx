@@ -1,10 +1,11 @@
 import {FunctionComponent, useEffect, useMemo, useState} from "react";
 import styled from "styled-components";
-import {ReactComponent as ShareLogo} from "../assets/image/share.svg";
+
 import {ReactComponent as FacebookLogo} from "../assets/image/facebook.svg";
+import {ReactComponent as ShareLogo} from "../assets/image/share.svg";
 import {ReactComponent as TwitterLogo} from "../assets/image/twitter.svg";
-import Flex from "./Flex";
 import {SHARED_URL} from "../utils/constants";
+import Flex from "./Flex";
 
 const Container = styled.div`
     display: flex;
@@ -47,19 +48,22 @@ const Share: FunctionComponent<ShareProps> = ({highScore}) => {
     return (
         <Container>
             {canShare && (
-                <ShareLogo className="umami--click--share-button" onClick={handleShareClick} />
+                <ShareLogo
+                    className="plausible-event-name=Share plausible-event-media=native"
+                    onClick={handleShareClick}
+                />
             )}
             {!canShare && (
                 <Flex style={{gap: "0.75rem"}}>
                     <a
-                        className="umami--click--facebook-button"
+                        className="plausible-event-name=Share plausible-event-media=facebook"
                         target="_blank"
                         href={"https://www.facebook.com/sharer/sharer.php?u=" + SHARED_URL}
                     >
                         <FacebookLogo />
                     </a>
                     <a
-                        className="umami--click--twitter-button"
+                        className="plausible-event-name=Share plausible-event-media=twitter"
                         target="_blank"
                         href={
                             "https://twitter.com/share?url=" +
